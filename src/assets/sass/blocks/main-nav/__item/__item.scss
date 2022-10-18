@@ -1,0 +1,13 @@
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .main-nav__item {
+        margin-right: 40px;
+        padding: 20px 4px;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .main-nav__item {
+        margin-right: 40px;
+        padding: 20px 4px;
+    }
+}

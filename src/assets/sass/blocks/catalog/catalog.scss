@@ -1,0 +1,10 @@
+@import "./__image/_image";
+@import "./__item/_item";
+@import "./__link/_link";
+@import "./__list/_list";
+@import "./__title/_title";
+
+.catalog {
+    padding: 64px 0;   
+    background-color: $bgr-color;
+}

@@ -1,0 +1,13 @@
+@import "./__list/_list";
+@import "./__text/_text";
+@import "./__title/_title";
+@import "./__wrapper/_wrapper";
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 64px 32px;
+    background-color: $text;
+    color: $bgr-color;
+}

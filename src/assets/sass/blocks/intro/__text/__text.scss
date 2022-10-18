@@ -1,0 +1,30 @@
+@media screen and (max-width: $tablet-width) {
+    .intro__text {
+        margin: 0;
+        padding: 50px;
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .intro__text {
+        margin: 0;
+        margin-bottom: 26px;
+        padding: 0 40px;
+        font-size: 3.56em;
+        line-height: 81px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .intro__text {
+        margin: 0;
+        margin-bottom: 26px;
+        padding: 0 40px;
+        font-size: 3.56em;
+        line-height: 81px;
+        text-align: center;
+    }
+}

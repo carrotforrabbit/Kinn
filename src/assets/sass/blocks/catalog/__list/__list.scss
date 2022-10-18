@@ -1,0 +1,8 @@
+.catalog__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(411px, 1fr)) ;
+    grid-gap: 32px;
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+}
