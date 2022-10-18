@@ -1,0 +1,13 @@
+@import "./__icon/_icon";
+@import "./__item/_item";
+@import "./__link/_link";
+@import "./cart-number/cart-number.scss";
+
+.nav-social {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+}
