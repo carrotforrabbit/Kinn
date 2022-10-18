@@ -1,21 +1,18 @@
 @font-face {
   font-family: Roboto;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
-  src: url("../fonts/Roboto-Regular.woff2");
+  src: url("../fonts/Roboto-Light.woff2");
 }
 .visually-hidden {
   display: none;
 }
 
-.body-wrapper {
-  margin: 0 auto;
-}
-
 body {
   display: flex;
   flex-direction: column;
-  margin: 0;
+  margin: 0 auto;
+  width: 1360px;
   height: 100%;
   font-family: Roboto, sans-serif;
   color: hsl(66deg, 19%, 29%);
@@ -96,7 +93,6 @@ body {
     padding-left: 20px;
     padding: 0;
     margin: 0;
-    margin-right: 134px;
     color: hsl(66deg, 19%, 29%);
     font-size: 16px;
     line-height: 25px;
@@ -105,11 +101,14 @@ body {
   }
 }
 .main-nav {
-  max-width: 100%;
   display: flex;
+  max-width: 100%;
+  max-height: 102px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
   flex-grow: 1;
   flex-wrap: wrap;
-  max-height: 102px;
   background-color: hsl(0deg, 0%, 100%);
   border-top: 16px solid hsl(60deg, 100%, 97%);
 }
@@ -286,7 +285,6 @@ body {
 }
 .main-logo__img {
   padding: 0;
-  padding-top: 13px;
   margin: 0;
 }
 
@@ -489,6 +487,17 @@ body {
   list-style-type: none;
 }
 
+.footer__text {
+  max-width: 256px;
+}
+.footer__text_mail {
+  text-decoration: none;
+  color: inherit;
+}
+.footer__text_mail:hover {
+  text-decoration: underline;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -514,16 +523,44 @@ body {
   margin-left: 20px;
 }
 
-.footer-social__link {
-  fill: black;
-}
-.footer-social__link:hover {
-  fill: hsl(60deg, 100%, 97%);
-}
-
 .footer-social__list {
   display: flex;
   list-style-type: none;
+}
+
+hr {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(60deg, 100%, 97%);
+}
+
+.nav-social__item {
+  margin-left: 10px;
+}
+
+.nav-social__link {
+  padding: 5px;
+}
+
+.nav-social__cart-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 45px;
+  right: 325px;
+  text-align: center;
+  border-radius: 50px;
+  background-color: hsl(60deg, 100%, 97%);
+}
+
+.nav-social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

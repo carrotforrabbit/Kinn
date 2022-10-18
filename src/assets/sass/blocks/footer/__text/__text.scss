@@ -1,0 +1,12 @@
+.footer__text {
+    max-width: 256px;
+
+    &_mail {
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
