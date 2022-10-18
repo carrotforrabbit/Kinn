@@ -1,0 +1,30 @@
+@import "./__image/_image";
+@import "./__text/_text";
+@import "./__title/_title";
+@import "./__wrapper/_wrapper";
+
+.card {
+    display: flex;
+    flex-grow: 1;
+    margin: 0;
+    padding: 64px 32px;
+    background-color: $bgr-color;
+
+    &--left {
+         margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: $tablet-width) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,36 @@
+@import "./__title/_title";
+@import "./__text/_text";
+
+.photo-wrapper {
+    max-height: 732px;
+    background-image: url("../images/background-plates.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 16px solid $white;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .photo-wrapper {
+        padding: 30px 50px 350px 50px;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .photo-wrapper {
+        max-width: 100%;
+        min-height: 732px;
+        box-sizing: border-box;
+        margin: 23px 0;
+        padding: 72px 117px;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .photo-wrapper {
+        max-width: 100%;
+        min-height: 732px;
+        box-sizing: border-box;
+        margin: 23px 0;
+        padding: 72px 117px;
+    }
+}

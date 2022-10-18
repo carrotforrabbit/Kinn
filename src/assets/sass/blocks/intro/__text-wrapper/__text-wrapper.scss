@@ -1,0 +1,19 @@
+@media screen and (max-width: $tablet-width) {
+     .intro__text-wrapper {
+        padding: 60px;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .intro__text-wrapper {
+        padding: 87px 32px;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .intro__text-wrapper {
+        padding: 87px 32px;
+    }
+}

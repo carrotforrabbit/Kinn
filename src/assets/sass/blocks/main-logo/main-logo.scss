@@ -1,0 +1,12 @@
+@import "./__image/_image";
+
+.main-logo {
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+     .main-logo {
+        align-self: center;
+    }
+}

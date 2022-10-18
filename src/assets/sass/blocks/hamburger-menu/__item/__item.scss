@@ -1,0 +1,21 @@
+@media screen and (max-width: $tablet-width) {
+    .hamburger-menu__item {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: #56593D;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+    }
+    .hamburger-menu__item:nth-child(1) {
+        top: 0px;
+    }
+    .hamburger-menu__item:nth-child(2) {
+        top: 10px;
+    }
+    .hamburger-menu__item:nth-child(3) {
+        top: 20px;
+    }
+}

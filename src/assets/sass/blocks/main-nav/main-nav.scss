@@ -1,0 +1,37 @@
+@import "./__item/_item";
+@import "./__link/_link";
+@import "./__list/_list";
+
+.main-nav {
+    max-width: 100%;
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    max-height: 102px;
+    background-color: $white;
+    border-top: 16px solid $bgr-color;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .nav {
+        display: flex;
+        padding: 0 20px;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .nav {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .nav {
+        justify-content: flex-start;
+    }
+}

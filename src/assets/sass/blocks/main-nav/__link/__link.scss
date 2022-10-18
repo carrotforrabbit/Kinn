@@ -1,0 +1,23 @@
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .main-nav__link {
+        padding: 5px;
+        color: inherit;
+        text-decoration: none;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+}
+
+@media screen and (min-width: $desktop-width) {
+    .main-nav__link {
+        padding: 5px;
+        color: inherit;
+        text-decoration: none;
+    
+        &:hover {
+        text-decoration: underline;
+    }
+}
+}

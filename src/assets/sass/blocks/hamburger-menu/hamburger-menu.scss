@@ -1,0 +1,21 @@
+@media screen and (max-width: $tablet-width) {
+    .hamburger-menu {
+        width: 40px;
+        height: 25px;
+        position: relative;
+        margin: 13px auto 13px 0;
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: $desktop-width) {
+    .hamburger-menu {
+        display: none;
+    }
+}

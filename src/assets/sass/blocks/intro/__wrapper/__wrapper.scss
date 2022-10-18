@@ -1,0 +1,26 @@
+@import "./__subtext/_subtext";
+@import "./__text/_text";
+
+@media screen and (max-width: $tablet-width) {
+     .intro__wrapper {
+        padding: 0;
+        margin: 300px 10px 80px 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .intro__wrapper {
+        margin: 400px 64px 64px 0;
+        padding: 0;
+        text-align: right;
+    }
+}
+
+@media screen and (min-width: $desktop-width)  {
+    .intro__wrapper {
+        margin: 470px 64px 64px 0;
+        padding: 0;
+        text-align: right;
+    }
+}
