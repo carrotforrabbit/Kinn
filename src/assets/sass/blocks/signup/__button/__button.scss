@@ -1,0 +1,15 @@
+.signup__button {
+    padding: 5px 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border: none;
+    color: $bgr-color;
+    background-color: $text;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $bgr-color;
+        color: $text;
+        border: none;
+    }
+}

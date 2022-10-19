@@ -563,4 +563,51 @@ hr {
   margin: 0;
 }
 
+.signup__button {
+  padding: 5px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  color: hsl(60deg, 100%, 97%);
+  background-color: hsl(66deg, 19%, 29%);
+  cursor: pointer;
+}
+.signup__button:hover {
+  background-color: hsl(60deg, 100%, 97%);
+  color: hsl(66deg, 19%, 29%);
+  border: none;
+}
+
+.signup__input {
+  width: 340px;
+  margin-right: 16px;
+  border: none;
+  border-bottom: 1px solid hsl(66deg, 19%, 29%);
+  background-color: hsl(60deg, 100%, 97%);
+}
+
+.signup__text {
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  font-size: 17px;
+  text-align: center;
+}
+
+.signup__title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.signup__form {
+  display: flex;
+  justify-content: center;
+}
+
+.signup {
+  padding: 63px 400px;
+  margin: 40px 0;
+  background-color: hsl(60deg, 100%, 97%);
+}
+
 /*# sourceMappingURL=main.css.map */
