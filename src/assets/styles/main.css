@@ -627,6 +627,14 @@ hr {
   background-color: hsl(60deg, 100%, 97%);
 }
 
+.form-wrapper__button {
+  text-transform: uppercase;
+  border: none;
+  color: hsl(60deg, 100%, 97%);
+  background-color: hsl(66deg, 19%, 29%);
+  cursor: pointer;
+}
+
 .form-wrapper {
   display: flex;
   flex-direction: column;

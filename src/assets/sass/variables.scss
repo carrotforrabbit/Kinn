@@ -12,8 +12,17 @@ $bgr-color: hsl(60, 100%, 97%);
 
 
 //Миксины
+
 @mixin input {
     border: none;
     border-bottom: 1px solid $text;
     background-color: $bgr-color;
+}
+
+@mixin button {
+    text-transform: uppercase;
+    border: none;
+    color: $bgr-color;
+    background-color: $text;
+    cursor: pointer;
 }
