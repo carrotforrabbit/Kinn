@@ -10,3 +10,10 @@ $text: hsl(66, 19%, 29%);
 $white: hsl(0, 0%, 100%);
 $bgr-color: hsl(60, 100%, 97%);
 
+
+//Миксины
+@mixin input {
+    border: none;
+    border-bottom: 1px solid $text;
+    background-color: $bgr-color;
+}

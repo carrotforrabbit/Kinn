@@ -1,0 +1,8 @@
+@import "./__input/_input";
+@import "./__name/_name";
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

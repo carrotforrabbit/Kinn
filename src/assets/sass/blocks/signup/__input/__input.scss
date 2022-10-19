@@ -1,7 +1,5 @@
 .signup__input {
     width: 340px;
     margin-right: 16px;
-    border: none;
-    border-bottom: 1px solid $text;
-    background-color: $bgr-color;
+    @include input;
 }
