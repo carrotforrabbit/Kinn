@@ -3,6 +3,7 @@
 @import "./__button/_button";
 
 .form-wrapper {
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

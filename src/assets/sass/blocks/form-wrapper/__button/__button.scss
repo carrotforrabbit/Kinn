@@ -1,3 +1,11 @@
 .form-wrapper__button {
     @include button;
+    width: 110px;
+    padding: 20px 25px;
+
+
+    &:hover {
+        background-color: $bgr-color;
+        color: $text;
+    }
 }

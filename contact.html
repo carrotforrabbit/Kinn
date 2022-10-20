@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./src/assets/styles/main.css">
-    <title>Document</title>
+    <title>Contact</title>
 </head>
 
 <body>
@@ -66,34 +66,41 @@
         <main>
             <section class="form">
                 <h2 class="form__title">Contact</h2>
-                <p class="form__text">hello@kinnhome.co</p>
+                <hr class="divider divider_block">
+                <p class="form__text form__text_first">hello@kinnhome.co</p>
                 <p class="form__text">Received a damaged item? Fill out this form and we'll get back to you shortly.
                 </p>
                 <p class="form__text">Trade and wholesale inquiries, please fill out this form or email us at
                     info@kinnhome.co
                 </p>
-                <div class="form__error"></div>
-                <form class="form-wrapper" action="">
-                    <div class="form-wapper__name"></div>
-                    <input class="form-wrapper__input input" type="text">
-                    <input class="form-wrapper__input input" type="email">
-                    <input class="form-wrapper__input input" type="text">
-                    <input class="form-wrapper__input input" type="text">
-                    <button class="form-wrapper__button" type="button">send</button>
-                </form>
+                <div class="form__error" id="formError"></div>
+                <div class="form-wrapper-general">
+                    <form class="form-wrapper" action="">
+                        <label for="formName" class="form-wapper__container"></label>
+                        <input class="form-wrapper__input" type="text" id="formName" placeholder="Name">
+                        <div class="form-wapper__container"></div>
+                        <input class="form-wrapper__input" type="email" id="formMail" placeholder="Email">
+                        <div class="form-wapper__container"></div>
+                        <input class="form-wrapper__input" type="text" id="formPhone" placeholder="Phone">
+                        <div class="form-wapper__container"></div>
+                        <textarea class="form-wrapper__input form-wrapper__input_message" name="inputMessage"
+                            id="formMessage" cols="30" rows="15" placeholder="Message"></textarea>
+                        <button class="form-wrapper__button" type="button">send</button>
+                    </form>
+                </div>
             </section>
         </main>
         <footer class="footer">
             <section class="footer__wrapper">
                 <h2 class="visually-hidden">Footer main</h2>
                 <p class="footer__title">&#169; 2021 Kinn-Home</p>
-                <hr />
+                <hr class="divider divider_footer" />
                 <p class="footer__text">Need to get in touch? Just email us at <a class="footer__text_mail"
                         href="mailto:hello@kinnhome.co">hello@kinnhome.co</a></p>
             </section>
             <section class="footer__wrapper">
                 <h2 class="footer__title footer-text footer-text">explore</h2>
-                <hr />
+                <hr class="divider divider_footer" />
                 <ul class="footer__list">
                     <li class="footer__list__item footer-text"><a class="footer__list__link" href="#">shop</a></li>
                     <li class="footer__list__item footer-text"><a class="footer__list__link" href="#">style quiz</a>
@@ -104,7 +111,7 @@
             </section>
             <section class="footer__wrapper">
                 <h2 class="footer__title footer-text">help</h2>
-                <hr />
+                <hr class="divider divider_footer" />
                 <ul class="footer__list">
                     <li class="footer__list__item footer-text"><a class="footer__list__link" href="#">faqs +
                             shipping</a>
