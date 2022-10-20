@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 1360px;
+    max-width: 1360px;
     height: 100%;
     font-family: Roboto, sans-serif;
     color: $text;

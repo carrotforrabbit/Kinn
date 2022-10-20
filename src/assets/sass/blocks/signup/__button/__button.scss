@@ -1,0 +1,11 @@
+.signup__button {
+    padding: 5px 25px;
+    font-size: 15px;
+    @include button;
+
+    &:hover {
+        background-color: $bgr-color;
+        color: $text;
+        border: none;
+    }
+}

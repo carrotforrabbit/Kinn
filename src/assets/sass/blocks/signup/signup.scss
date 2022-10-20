@@ -1,0 +1,11 @@
+@import "./__button/_button";
+@import "./__input/_input";
+@import "./__text/_text";
+@import "./__title/_title";
+@import "./__form/_form";
+
+.signup {
+    padding: 63px 400px;
+    margin: 40px 0;
+    background-color: $bgr-color;
+}

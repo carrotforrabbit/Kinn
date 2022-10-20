@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1360px;
+  max-width: 1360px;
   height: 100%;
   font-family: Roboto, sans-serif;
   color: hsl(66deg, 19%, 29%);
@@ -523,6 +523,13 @@ body {
   margin-left: 20px;
 }
 
+.footer-social__link {
+  fill: black;
+}
+.footer-social__link:hover {
+  fill: hsl(60deg, 100%, 97%);
+}
+
 .footer-social__list {
   display: flex;
   list-style-type: none;
@@ -561,6 +568,77 @@ hr {
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
+}
+
+.signup__button {
+  padding: 5px 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  border: none;
+  color: hsl(60deg, 100%, 97%);
+  background-color: hsl(66deg, 19%, 29%);
+  cursor: pointer;
+}
+.signup__button:hover {
+  background-color: hsl(60deg, 100%, 97%);
+  color: hsl(66deg, 19%, 29%);
+  border: none;
+}
+
+.signup__input {
+  width: 340px;
+  margin-right: 16px;
+  border: none;
+  border-bottom: 1px solid hsl(66deg, 19%, 29%);
+  background-color: hsl(60deg, 100%, 97%);
+}
+
+.signup__text {
+  margin: 0;
+  margin-bottom: 48px;
+  padding: 0;
+  font-size: 17px;
+  text-align: center;
+}
+
+.signup__title {
+  font-size: 28px;
+  text-align: center;
+}
+
+.signup__form {
+  display: flex;
+  justify-content: center;
+}
+
+.signup {
+  padding: 63px 400px;
+  margin: 40px 0;
+  background-color: hsl(60deg, 100%, 97%);
+}
+
+.form {
+  background-color: hsl(60deg, 100%, 97%);
+}
+
+.form-wrapper__input {
+  border: none;
+  border-bottom: 1px solid hsl(66deg, 19%, 29%);
+  background-color: hsl(60deg, 100%, 97%);
+}
+
+.form-wrapper__button {
+  text-transform: uppercase;
+  border: none;
+  color: hsl(60deg, 100%, 97%);
+  background-color: hsl(66deg, 19%, 29%);
+  cursor: pointer;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=main.css.map */
