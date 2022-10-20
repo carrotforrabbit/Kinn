@@ -1,0 +1,12 @@
+.divider {
+    width: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: $bgr-color;
+
+    &_block {
+    display: block;
+    margin: 0 auto;
+    background-color: $text;
+    }
+}

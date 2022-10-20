@@ -17,6 +17,16 @@ $bgr-color: hsl(60, 100%, 97%);
     border: none;
     border-bottom: 1px solid $text;
     background-color: $bgr-color;
+    font-size: 15px;
+    font-family: inherit;
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        outline: none;
+    }
 }
 
 @mixin button {
@@ -24,5 +34,6 @@ $bgr-color: hsl(60, 100%, 97%);
     border: none;
     color: $bgr-color;
     background-color: $text;
+    letter-spacing: 1.6px;
     cursor: pointer;
 }

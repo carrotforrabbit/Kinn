@@ -411,6 +411,7 @@ body {
 .card__text {
   padding: 0;
   margin: 0;
+  margin-top: 35px;
   font-size: 20px;
   line-height: 32px;
   text-align: center;
@@ -418,7 +419,7 @@ body {
 
 .card__title {
   margin: 0;
-  margin-bottom: 66px;
+  margin-bottom: 35px;
   padding: 0;
   font-size: 29px;
   line-height: 28px;
@@ -523,27 +524,16 @@ body {
   margin-left: 20px;
 }
 
-.footer-social__link {
-  fill: black;
-}
-.footer-social__link:hover {
-  fill: hsl(60deg, 100%, 97%);
-}
-
 .footer-social__list {
   display: flex;
   list-style-type: none;
 }
 
-hr {
-  width: 50px;
-  padding: 0;
-  margin: 0;
-  background-color: hsl(60deg, 100%, 97%);
-}
-
 .nav-social__item {
   margin-left: 10px;
+}
+.nav-social__item_cart {
+  position: relative;
 }
 
 .nav-social__link {
@@ -551,11 +541,11 @@ hr {
 }
 
 .nav-social__cart-number {
-  position: absolute;
+  position: relative;
   width: 20px;
   height: 20px;
-  top: 45px;
-  right: 325px;
+  top: 3px;
+  right: 15px;
   text-align: center;
   border-radius: 50px;
   background-color: hsl(60deg, 100%, 97%);
@@ -577,6 +567,7 @@ hr {
   border: none;
   color: hsl(60deg, 100%, 97%);
   background-color: hsl(66deg, 19%, 29%);
+  letter-spacing: 1.6px;
   cursor: pointer;
 }
 .signup__button:hover {
@@ -591,6 +582,14 @@ hr {
   border: none;
   border-bottom: 1px solid hsl(66deg, 19%, 29%);
   background-color: hsl(60deg, 100%, 97%);
+  font-size: 15px;
+  font-family: inherit;
+}
+.signup__input:focus {
+  outline: none;
+}
+.signup__input:active {
+  outline: none;
 }
 
 .signup__text {
@@ -617,7 +616,27 @@ hr {
   background-color: hsl(60deg, 100%, 97%);
 }
 
+.form__text {
+  margin: 20px 0;
+  padding: 0;
+  font-size: 20px;
+  line-height: 32px;
+}
+.form__text_first {
+  margin-bottom: 35px;
+}
+
+.form__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-align: center;
+}
+
 .form {
+  padding: 50px 200px;
+  margin: 0;
+  margin-bottom: 30px;
   background-color: hsl(60deg, 100%, 97%);
 }
 
@@ -625,6 +644,23 @@ hr {
   border: none;
   border-bottom: 1px solid hsl(66deg, 19%, 29%);
   background-color: hsl(60deg, 100%, 97%);
+  font-size: 15px;
+  font-family: inherit;
+  margin: 20px 0;
+  padding: 10px;
+}
+.form-wrapper__input:focus {
+  outline: none;
+}
+.form-wrapper__input:active {
+  outline: none;
+}
+.form-wrapper__input_message {
+  padding: 15px;
+  margin: 30px 0;
+  border: 1px solid hsl(66deg, 19%, 29%);
+  background-color: hsl(60deg, 100%, 97%);
+  color: hsl(66deg, 19%, 29%);
 }
 
 .form-wrapper__button {
@@ -632,13 +668,38 @@ hr {
   border: none;
   color: hsl(60deg, 100%, 97%);
   background-color: hsl(66deg, 19%, 29%);
+  letter-spacing: 1.6px;
   cursor: pointer;
+  width: 110px;
+  padding: 20px 25px;
+}
+.form-wrapper__button:hover {
+  background-color: hsl(60deg, 100%, 97%);
+  color: hsl(66deg, 19%, 29%);
 }
 
 .form-wrapper {
+  max-width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.divider {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  background-color: hsl(60deg, 100%, 97%);
+}
+.divider_block {
+  display: block;
+  margin: 0 auto;
+  background-color: hsl(66deg, 19%, 29%);
+}
+
+.form-wrapper-general {
+  display: block;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
