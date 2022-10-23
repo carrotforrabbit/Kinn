@@ -6,7 +6,7 @@
     background-image: url("../images/background-plates.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    border: 16px solid $white;
+    border: 16px solid $bgr-color;
 }
 
 @media screen and (max-width: $tablet-width) {

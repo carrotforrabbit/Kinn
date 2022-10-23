@@ -2,3 +2,9 @@
     display: flex;
     list-style-type: none;
 }
+
+@media screen and (max-width: $tablet-width) {
+    .footer-social__list {
+    padding-left: 0;
+}
+}

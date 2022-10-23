@@ -1,7 +1,7 @@
 @import "./__item/_item";
 
 @media screen and (max-width: $tablet-width) {
-    .hamburger-menu {
+    .hamburger-menu__toggle {
         width: 40px;
         height: 25px;
         position: relative;
@@ -10,14 +10,8 @@
     }
 }
 
-@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
-    .hamburger-menu {
-        // display: none;
-    }
-}
-
 @media screen and (min-width: $desktop-width) {
-    .hamburger-menu {
+    .hamburger-menu__toggle {
         display: none;
     }
 }

@@ -14,9 +14,17 @@
         <header class="header">
             <nav class="main-nav">
                 <div class="hamburger-menu">
-                    <span class="hamburger-menu__item"></span>
-                    <span class="hamburger-menu__item"></span>
-                    <span class="hamburger-menu__item"></span>
+                    <div class="hamburger-menu__toggle" onmousedown="openHamburger()">
+                        <span class="hamburger-menu__toggle__item"></span>
+                        <span class="hamburger-menu__toggle__item"></span>
+                        <span class="hamburger-menu__toggle__item"></span>
+                    </div>
+                    <ul class="hamburger-menu__list">
+                        <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">shop</a></li>
+                        <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">style quiz</a></li>
+                        <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">about us</a></li>
+                        <li class="hamburger-menu__item"><a href="#" class="hamburger-menu__link">stories</a></li>
+                    </ul>
                 </div>
                 <ul class="main-nav__list">
                     <li class="main-nav__item"><a href="#" class="main-nav__link">shop</a></li>
@@ -160,7 +168,7 @@
                 <p class="footer__text">Need to get in touch? Just email us at <a class="footer__text_mail"
                         href="mailto:hello@kinnhome.co">hello@kinnhome.co</a></p>
             </section>
-            <section class="footer__wrapper">
+            <section class="footer__wrapper footer__wrapper_first">
                 <h2 class="footer__title footer-text footer__title_second">explore</h2>
                 <hr class="divider divider_footer" />
                 <ul class="footer__list">
@@ -173,7 +181,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="footer__wrapper">
+            <section class="footer__wrapper footer__wrapper_second">
                 <h2 class="footer__title footer__title_third footer-text">help</h2>
                 <hr class="divider divider_footer" />
                 <ul class="footer__list">
@@ -189,9 +197,10 @@
             <section class="footer-social">
                 <h2 class="visually-hidden">Footer Social</h2>
                 <ul class="footer-social__list">
-                    <li class="footer-social__item"><a href="" class="footer-social__link"><svg
-                                class="footer-social__icon" xmlns="http://www.w3.org/2000/svg" width="16" height="23"
-                                viewBox="0 0 16 23" fill="none">
+                    <li class="footer-social__item footer-social__item_first"><a href=""
+                            class="footer-social__link"><svg class="footer-social__icon"
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="23" viewBox="0 0 16 23"
+                                fill="none">
                                 <path
                                     d="M15.9986 0.00090759V4.03544H12.119C11.3608 4.03544 10.5808 4.56732 10.5808 4.9558V7.60253H15.9795C15.7654 9.63931 15.3168 11.4946 15.3168 11.4946H10.563V23H3.46783V11.4946H0V7.61523H3.46783V4.44933C3.46783 3.87932 3.29327 0 10.7376 0H16L15.9986 0.00090759Z"
                                     fill="black" />
