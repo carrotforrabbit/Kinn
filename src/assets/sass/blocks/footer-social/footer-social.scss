@@ -2,3 +2,15 @@
 @import "./__item/_item";
 @import "./__link/_link";
 @import "./__list/_list";
+
+@media screen and (max-width: $tablet-width) {
+    .footer-social {
+    order: 1;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .footer-social {
+    order: 1;
+    }
+}

@@ -1,0 +1,11 @@
+@media screen and (max-width: $tablet-width) {
+    .footer__wrapper_copyright {
+    order: 3;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    // .footer__wrapper_copyright {
+    // order: 3;
+    // }
+}

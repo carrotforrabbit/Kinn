@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./src/assets/styles/main.css">
     <title>Kinn</title>
 </head>
@@ -95,7 +94,7 @@
                     <li class="catalog__item">
                         <a href="#" class="catalog__link">
                             <img src="./src/assets/images/catalog/catalog2.jpg" alt="Photo of the product"
-                                class="catalog__img" max-width="411" max-height="411">
+                                class="catalog__img">
                             <p class="catalog__item__name">Maple board - Long</p>
                             <p class="catalog__item__subtext">$125.00</p>
                         </a>
@@ -103,7 +102,7 @@
                     <li class="catalog__item">
                         <a href="#" class="catalog__link">
                             <img src="./src/assets/images/catalog/catalog3.jpg" alt="Photo of the product"
-                                class="catalog__img" max-width="411" max-height="411">
+                                class="catalog__img">
                             <p class="catalog__item__name">Maple board - Wide</p>
                             <p class="catalog__item__subtext">$158.00</p>
                         </a>
@@ -146,6 +145,7 @@
             <section class="signup">
                 <h2 class="signup__title">Sign up to our newsletter</h2>
                 <p class="signup__text">Receive special offers and first look at new products.</p>
+                <div class="signup__error" id="signupError"></div>
                 <form class="signup__form" action="">
                     <input type="text" class="signup__input" id="subscribe">
                     <button onclick="subscribeMe()" class="signup__button" type="button">Subscribe</button>
@@ -153,7 +153,7 @@
             </section>
         </main>
         <footer class="footer">
-            <section class="footer__wrapper">
+            <section class="footer__wrapper footer__wrapper_copyright">
                 <h2 class="visually-hidden">Footer main</h2>
                 <p class="footer__title footer__title_first">&#169; 2021 Kinn-Home</p>
                 <hr class="divider divider_footer" />

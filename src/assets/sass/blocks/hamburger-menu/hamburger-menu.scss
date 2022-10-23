@@ -1,3 +1,5 @@
+@import "./__item/_item";
+
 @media screen and (max-width: $tablet-width) {
     .hamburger-menu {
         width: 40px;
@@ -10,7 +12,7 @@
 
 @media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
     .hamburger-menu {
-        display: none;
+        // display: none;
     }
 }
 

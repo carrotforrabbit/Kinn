@@ -135,17 +135,33 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  .hamburger-menu__item {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #56593D;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+  }
+  .hamburger-menu__item:nth-child(1) {
+    top: 0px;
+  }
+  .hamburger-menu__item:nth-child(2) {
+    top: 10px;
+  }
+  .hamburger-menu__item:nth-child(3) {
+    top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
   .hamburger-menu {
     width: 40px;
     height: 25px;
     position: relative;
     margin: 13px auto 13px 0;
     cursor: pointer;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .hamburger-menu {
-    display: none;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -220,7 +236,7 @@ body {
 @media screen and (max-width: 768px) {
   .intro__text {
     margin: 0;
-    padding: 50px;
+    padding-bottom: 50px;
     font-size: 2em;
     text-align: center;
   }
@@ -499,6 +515,11 @@ body {
   text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+  .footer__wrapper_copyright {
+    order: 3;
+  }
+}
 .footer {
   display: flex;
   justify-content: space-between;
@@ -508,16 +529,15 @@ body {
   color: hsl(60deg, 100%, 97%);
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .footer-text {
   font-size: 15px;
   text-transform: uppercase;
-}
-
-.footer-social__icon {
-  fill: black;
-}
-.footer-social__icon:hover {
-  fill: hsl(60deg, 100%, 97%);
 }
 
 .footer-social__item {
@@ -529,6 +549,16 @@ body {
   list-style-type: none;
 }
 
+@media screen and (max-width: 768px) {
+  .footer-social {
+    order: 1;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer-social {
+    order: 1;
+  }
+}
 .nav-social__item {
   margin-left: 10px;
 }
@@ -560,6 +590,11 @@ body {
   margin: 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .nav-social {
+    display: none;
+  }
+}
 .signup__button {
   padding: 5px 25px;
   font-size: 15px;
@@ -582,7 +617,7 @@ body {
   border: none;
   border-bottom: 1px solid hsl(66deg, 19%, 29%);
   background-color: hsl(60deg, 100%, 97%);
-  font-size: 15px;
+  font-size: 16px;
   font-family: inherit;
 }
 .signup__input:focus {
@@ -594,7 +629,7 @@ body {
 
 .signup__text {
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 30px;
   padding: 0;
   font-size: 17px;
   text-align: center;
@@ -610,10 +645,33 @@ body {
   justify-content: center;
 }
 
+.signup__error {
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #D02D2F;
+}
+
 .signup {
   padding: 63px 400px;
   margin: 40px 0;
   background-color: hsl(60deg, 100%, 97%);
+}
+
+@media screen and (max-width: 768px) {
+  .signup {
+    padding: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .signup {
+    padding: 30px;
+  }
+}
+.form__error {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #D02D2F;
 }
 
 .form__text {
@@ -640,14 +698,26 @@ body {
   background-color: hsl(60deg, 100%, 97%);
 }
 
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 30px;
+    padding-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .form {
+    padding: 30px;
+    padding-top: 50px;
+  }
+}
 .form-wrapper__input {
   border: none;
   border-bottom: 1px solid hsl(66deg, 19%, 29%);
   background-color: hsl(60deg, 100%, 97%);
-  font-size: 15px;
+  font-size: 16px;
   font-family: inherit;
   margin: 20px 0;
-  padding: 10px;
+  padding-bottom: 10px;
 }
 .form-wrapper__input:focus {
   outline: none;
@@ -676,6 +746,10 @@ body {
 .form-wrapper__button:hover {
   background-color: hsl(60deg, 100%, 97%);
   color: hsl(66deg, 19%, 29%);
+}
+
+.form-wrapper__container {
+  visibility: hidden;
 }
 
 .form-wrapper {

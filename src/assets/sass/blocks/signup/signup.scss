@@ -3,9 +3,22 @@
 @import "./__text/_text";
 @import "./__title/_title";
 @import "./__form/_form";
+@import "./__error/_error";
 
 .signup {
     padding: 63px 400px;
     margin: 40px 0;
     background-color: $bgr-color;
+}
+
+@media screen and (max-width: $tablet-width) {
+    .signup {
+        padding: 30px;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .signup {
+        padding: 30px;
+    }
 }

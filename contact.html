@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./src/assets/styles/main.css">
     <title>Contact</title>
 </head>
@@ -76,22 +75,26 @@
                 <div class="form__error" id="formError"></div>
                 <div class="form-wrapper-general">
                     <form class="form-wrapper" action="">
-                        <label for="formName" class="form-wapper__container"></label>
-                        <input class="form-wrapper__input" type="text" id="formName" placeholder="Name">
-                        <div class="form-wapper__container"></div>
-                        <input class="form-wrapper__input" type="email" id="formMail" placeholder="Email">
-                        <div class="form-wapper__container"></div>
-                        <input class="form-wrapper__input" type="text" id="formPhone" placeholder="Phone">
-                        <div class="form-wapper__container"></div>
-                        <textarea class="form-wrapper__input form-wrapper__input_message" name="inputMessage"
-                            id="formMessage" cols="30" rows="15" placeholder="Message"></textarea>
-                        <button class="form-wrapper__button" type="button">send</button>
+                        <label for="formName" class="form-wrapper__container" id="addName">Name</label>
+                        <input onmousedown="changeName()" class="form-wrapper__input" type="text" id="formName"
+                            placeholder="Name" onfocus="this.placeholder = ''">
+                        <label for="formMail" class="form-wrapper__container" id="addMail">Email</label>
+                        <input onmousedown="changeMail()" class="form-wrapper__input" type="email" id="formMail"
+                            placeholder="Email" onfocus="this.placeholder = ''">
+                        <label for="formPhone" class="form-wrapper__container" id="addPhone">Phone</label>
+                        <input onmousedown="changePhone()" class="form-wrapper__input" type="text" id="formPhone"
+                            placeholder="Phone" onfocus="this.placeholder = ''">
+                        <label for="formMessage" class="form-wrapper__container" id="addMessage">Message</label>
+                        <textarea onmousedown="changeMessage()" class="form-wrapper__input form-wrapper__input_message"
+                            name="inputMessage" id="formMessage" cols="30" rows="15" placeholder="Message"
+                            onfocus="this.placeholder = ''"></textarea>
+                        <button onclick="submitForm()" class="form-wrapper__button" type="button">send</button>
                     </form>
                 </div>
             </section>
         </main>
         <footer class="footer">
-            <section class="footer__wrapper">
+            <section class="footer__wrapper footer__wrapper_copyright">
                 <h2 class="visually-hidden">Footer main</h2>
                 <p class="footer__title">&#169; 2021 Kinn-Home</p>
                 <hr class="divider divider_footer" />
@@ -155,6 +158,7 @@
             </section>
         </footer>
     </div>
+    <script src="./src/assets/script/script.js"></script>
 </body>
 
 </html>
