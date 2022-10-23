@@ -1,0 +1,9 @@
+.hamburger-menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $bgr-color;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

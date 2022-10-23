@@ -69,3 +69,9 @@ function changeMessage() {
 
     field.style.visibility = "visible";
 }
+
+function openHamburger() {
+    const menu = document.querySelector('.hamburger-menu__list');
+
+    menu.style.visibility = "visible";
+}
