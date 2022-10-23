@@ -8,3 +8,17 @@
     margin-bottom: 30px;
     background-color: $bgr-color;
 }
+
+@media screen and (max-width: $tablet-width) {
+   .form {
+       padding: 30px;
+       padding-top: 50px;
+   } 
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    .form {
+        padding: 30px;
+        padding-top: 50px;
+    }
+}

@@ -11,3 +11,17 @@
     background-color: $text;
     color: $bgr-color;
 }
+
+@media screen and (max-width: $tablet-width) {
+    .footer {
+    display: flex;
+    flex-direction: column;
+    }
+}
+
+@media screen and (min-width: $tablet-width) and (max-width: $desktop-width) {
+    // .footer {
+    // display: flex;
+    // flex-direction: column;
+    // }
+}
